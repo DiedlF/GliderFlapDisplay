@@ -12,6 +12,8 @@
 //was fehlt: Lastvielfaches (evtl. statt Kreisdurchmesser), vCAS (evtl. statt pitot factor)
 //kein RX am Anemoi?
 
+#define DISABLE_ALL_LIBRARY_WARNINGS
+
 #include "Arduino.h"
 //#include <String.h>
 #include <StreamString.h>
@@ -295,6 +297,7 @@ bool Anemoi_endOfSentenceHandler()
               //Serial.println("AhrsTerm: " + String(Anemoi_term) + ", a "  + String((uint16_t)Anemoi_term[1],16) + " "  + String((uint16_t)Anemoi_term[2],16) + "    "  + String((uint16_t)Anemoi_term[8],16) + " "  + String((uint16_t)Anemoi_term[9],16) + " "  + String((uint16_t)Anemoi_term[10],16));
               Serial.print("Anemoi_AhrsRollAngle: " + String(Anemoi_AhrsRollAngle));
               Serial.println(", Anemoi_AhrsPitchAngle: " + String(Anemoi_AhrsPitchAngle));
+              // Lastvielfaches = sqrt(1 + V_Cas^4 / (9.81^2 * R^2))
             }
           }
           break;
