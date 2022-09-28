@@ -8,7 +8,7 @@ Display the current flap setting of a glider
 - comment `//#include <User_Setup.h`
 - uncomment `#include <User_Setups/Setup22_TTGO_T4_v1.3.h>`
 
-## T4 
+## T4 periferals
 | Name        | V13     |
 | ----------- | ------- |
 | TFT Driver  | ILI9341 |
@@ -27,7 +27,20 @@ Display the current flap setting of a glider
 | Button 1    | 5       |
 | Button 2    | 27      |
 | Button 3    | 25      |
-| SPEAKER PWD | 19      |
-| SPEAKER OUT | 25      |
+| SPEAKER +   | 19      |
+| SPEAKER -   | 25      |
 | I2C_SDA     | 21      |
 | I2C_SCL     | 22      |
+
+## T4 connector pinout
+| ------- | ------- |
+| +5V     | VBat    |
+| GND     | VCC_IO  |
+| +3.3V   | IO 4    |
+| IO 19   | GND     |
+| RXD     | IO 0    |
+| TXD     | GND     |
+| IO 26   | IO 33   |
+| IO 32   | IO 35   |
+| IO 34   | RST/EN  |
+| S_VN    | S_VP    |
