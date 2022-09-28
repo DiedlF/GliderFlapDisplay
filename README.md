@@ -1,16 +1,16 @@
 # GliderFlapDisplay
 Display the current flap setting of a glider
-![(etc/TTGO T4.png)]
+
+![image](etc/TTGO%20T4.png)
 
 ## TFT_eSPI settings
 - open `.pio/libdeps/TFT_eSPI/User_Setup_Select.h`
 - comment `//#include <User_Setup.h`
 - uncomment `#include <User_Setups/Setup22_TTGO_T4_v1.3.h>`
 
-## T4 periferals
-| Name        | V13     |
+## T4 peripherals
+| Name        | Pin     |
 | ----------- | ------- |
-| TFT Driver  | ILI9341 |
 | TFT_MISO    | 12      |
 | TFT_MOSI    | 23      |
 | TFT_SCLK    | 18      |
@@ -40,7 +40,9 @@ Display the current flap setting of a glider
 | IO 19   | GND     |
 | RXD     | IO 0    |
 | TXD     | GND     |
-| IO 26!  | IO 33!  |
-| IO 32   | IO 35!  |
-| IO 34!  | RST/EN  |
-| S_VN    | S_VP!   |
+| IO 26*  | IO 33*  |
+| IO 32   | IO 35*  |
+| IO 34*  | RST/EN  |
+| S_VN    | S_VP*   |
+
+* pins not allocated with secondary function
