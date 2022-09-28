@@ -1,7 +1,6 @@
 # GliderFlapDisplay
 Display the current flap setting of a glider
-
-![](etc/TTGO T4.png)
+![(etc/TTGO T4.png)]
 
 ## TFT_eSPI settings
 - open `.pio/libdeps/TFT_eSPI/User_Setup_Select.h`
@@ -23,16 +22,17 @@ Display the current flap setting of a glider
 | SD_MOSI     | 15      |
 | SD_SCLK     | 14      |
 | SD_CS       | 13      |
-| Button 0    | 14      |
-| Button 1    | 5       |
-| Button 2    | 27      |
-| Button 3    | 25      |
-| SPEAKER +   | 19      |
-| SPEAKER -   | 25      |
+| Button 0    | 0       |
+| Button 1    | 36      |
+| Button 2    | 37      |
+| Button 3    | 39      |
+| SPEAKER Pwr | 19      |
+| SPEAKER Dat | 25      |
 | I2C_SDA     | 21      |
 | I2C_SCL     | 22      |
 
 ## T4 connector pinout
+| Row 1   | Row 2   |
 | ------- | ------- |
 | +5V     | VBat    |
 | GND     | VCC_IO  |
@@ -40,7 +40,7 @@ Display the current flap setting of a glider
 | IO 19   | GND     |
 | RXD     | IO 0    |
 | TXD     | GND     |
-| IO 26   | IO 33   |
-| IO 32   | IO 35   |
-| IO 34   | RST/EN  |
-| S_VN    | S_VP    |
+| IO 26!  | IO 33!  |
+| IO 32   | IO 35!  |
+| IO 34!  | RST/EN  |
+| S_VN    | S_VP!   |
