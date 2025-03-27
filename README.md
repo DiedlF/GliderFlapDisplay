@@ -1,7 +1,7 @@
 # GliderFlapDisplay
 Display the current flap setting of a glider
 
-![image](etc/TTGO%20T4.png)
+![image](etc/TTGO%20T4.jpg)
 
 ## TFT_eSPI settings
 - open `.pio/libdeps/TFT_eSPI/User_Setup_Select.h`
